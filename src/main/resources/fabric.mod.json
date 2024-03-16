@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "the-ancients",
+	"id": "theancients",
 	"version": "${version}",
 	"name": "The Ancients",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/the-ancients/icon.png",
+	"icon": "assets/theancients/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"the-ancients.mixins.json"
+		"theancients.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.7",
