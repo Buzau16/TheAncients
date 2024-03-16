@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "the-ancients",
+	"version": "${version}",
+	"name": "The Ancients",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Buzau"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/the-ancients/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"buzau.theancients.TheAncients"
+		],
+		"client": [
+			"buzau.theancients.TheAncientsClient"
+		],
+		"fabric-datagen": [
+			"buzau.theancients.TheAncientsDataGenerator"
+		]
+	},
+	"mixins": [
+		"the-ancients.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
