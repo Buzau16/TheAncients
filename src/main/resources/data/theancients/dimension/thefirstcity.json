@@ -1,26 +1,36 @@
 {
   "type": "theancients:thefirstcity_type",
   "generator": {
-    "type": "minecraft:flat",
-    "settings": {
-      "biome": "minecraft:plains",
-      "lakes": true,
-      "features": false,
-      "layers": [
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
         {
-          "block": "minecraft:grass_block",
-          "height": 1
+          "biome": "minecraft:plains",
+          "parameters": {
+            "temperature": 0.1,
+            "humidity": 0.01,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
-          "block": "minecraft:dirt",
-          "height": 1
-        },
-        {
-          "block": "minecraft:dirt",
-          "height": 1
+          "biome": "minecraft:birch_forest",
+          "parameters": {
+            "temperature": -0.1,
+            "humidity": -0.1,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
         }
-      ],
-      "structure_overrides": "minecraft:ancient_cities"
+      ]
     }
   }
 }

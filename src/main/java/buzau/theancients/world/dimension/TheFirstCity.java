@@ -12,7 +12,6 @@ import net.minecraft.world.dimension.DimensionOptions;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.dimension.DimensionTypes;
 
-import javax.swing.table.TableRowSorter;
 import java.util.OptionalLong;
 
 public class TheFirstCity {

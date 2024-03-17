@@ -1,6 +1,7 @@
 package buzau.theancients;
 
-import buzau.theancients.datagen.WorldGenerator;
+import buzau.theancients.block.ModBlocks;
+import buzau.theancients.items.TheAncientsItemGroup;
 import net.fabricmc.api.ModInitializer;
 
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
@@ -25,10 +26,21 @@ public class TheAncients implements ModInitializer {
 
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(Blocks.REINFORCED_DEEPSLATE)
-				.lightWithItem(Items.FLINT_AND_STEEL)
-				.destDimID(new Identifier("thefirstcity"))
-				.tintColor(15,15,15)
+				.lightWithItem(Items.ENDER_EYE)
+				.destDimID(new Identifier(TheAncients.MOD_ID, "thefirstcity"))
+				.tintColor(0,49,84)
+				.setPortalSearchYRange(60, 70)
+				.setReturnPortalSearchYRange(60,100)
 				.registerPortal();
-		LOGGER.info("Hello Fabric world!");
+
+//		CustomPortalBuilder.beginPortal()
+//				.frameBlock(Blocks.DIAMOND_BLOCK)
+//				.lightWithItem(Items.ENDER_EYE)
+//				.destDimID(new Identifier("the_end"))
+//				.tintColor(45,65,101)
+//				.registerPortal();
+
+		ModBlocks.registerBlocks();
+		TheAncientsItemGroup.registerItemGroup();
 	}
 }
