@@ -1,5 +1,5 @@
 {
-  "type": "theancients:thefirstcity_type",
+  "type": "theancients:theelderrealm_type",
   "generator": {
     "type": "minecraft:noise",
     "settings": "minecraft:overworld",
@@ -7,7 +7,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "minecraft:plains",
+          "biome": "theancients:enigmatic_wilds",
           "parameters": {
             "temperature": 0.1,
             "humidity": 0.01,

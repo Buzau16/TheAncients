@@ -27,7 +27,7 @@ public class TheAncients implements ModInitializer {
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(Blocks.REINFORCED_DEEPSLATE)
 				.lightWithItem(Items.ENDER_EYE)
-				.destDimID(new Identifier(TheAncients.MOD_ID, "thefirstcity"))
+				.destDimID(new Identifier(TheAncients.MOD_ID, "theelderrealm"))
 				.tintColor(0,49,84)
 				.setPortalSearchYRange(60, 70)
 				.setReturnPortalSearchYRange(60,100)
