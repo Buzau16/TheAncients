@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "theancients:item/raw_ethereal_arcane_ore"
+  }
+}

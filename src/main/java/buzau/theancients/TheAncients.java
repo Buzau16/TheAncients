@@ -1,7 +1,9 @@
 package buzau.theancients;
 
 import buzau.theancients.block.ModBlocks;
-import buzau.theancients.items.TheAncientsItemGroup;
+import buzau.theancients.items.custom.ModItems;
+import buzau.theancients.items.custom.TheAncientsItemGroup;
+import buzau.theancients.world.biome.surface.ModMaterialRules;
 import net.fabricmc.api.ModInitializer;
 
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
@@ -24,6 +26,8 @@ public class TheAncients implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModMaterialRules.makeRules();
+
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(Blocks.REINFORCED_DEEPSLATE)
 				.lightWithItem(Items.ENDER_EYE)
@@ -41,6 +45,7 @@ public class TheAncients implements ModInitializer {
 //				.registerPortal();
 
 		ModBlocks.registerBlocks();
+		ModItems.registerModItems();
 		TheAncientsItemGroup.registerItemGroup();
 	}
 }

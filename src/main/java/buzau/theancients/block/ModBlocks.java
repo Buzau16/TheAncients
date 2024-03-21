@@ -19,6 +19,9 @@ public class ModBlocks{
     public static Block ANCIENT_GRASS_BLOCK = registerBlock("ancient_grass_block",
             new Block(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK)));
 
+    public static Block ETHEREAL_ARCANE_ORE = registerBlock("ethereal_arcane_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TheAncients.MOD_ID, name), block);

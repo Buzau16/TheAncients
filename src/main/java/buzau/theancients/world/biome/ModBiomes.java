@@ -10,10 +10,11 @@ import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.chunk.ChunkGenerator;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
-public class ModBiomes {
+public class ModBiomes{
     public static final RegistryKey<Biome> ENIGMATICWILDS = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(TheAncients.MOD_ID, "enigmatic_wilds"));
 
@@ -67,6 +68,12 @@ public class ModBiomes {
                         .skyColor(0x5B93E8)       // Adjusted sky color
                         .foliageColor(0x5D8A3E)   // Adjusted foliage color (if applicable)
                         .fogColor(0x5B93E8)       // Match fog color to sky color
+//                        .waterColor(0xe82e3b)
+//                        .waterFogColor(0xbf1b26)
+//                        .skyColor(0x30c918)
+//                        .grassColor(0x7f03fc)
+//                        .foliageColor(0xd203fc)
+//                        .fogColor(0x22a1e6)
                         .build())
                 .build();
     }

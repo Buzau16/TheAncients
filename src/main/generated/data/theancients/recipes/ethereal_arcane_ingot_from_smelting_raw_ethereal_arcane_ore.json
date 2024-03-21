@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.9,
+  "group": "theancients",
+  "ingredient": {
+    "item": "theancients:raw_ethereal_arcane_ore"
+  },
+  "result": "theancients:ethereal_arcane_ingot"
+}

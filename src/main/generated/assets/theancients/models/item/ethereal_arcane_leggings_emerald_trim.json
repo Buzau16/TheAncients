@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "theancients:item/ethereal_arcane_leggings",
+    "layer1": "minecraft:trims/items/leggings_trim_emerald"
+  }
+}

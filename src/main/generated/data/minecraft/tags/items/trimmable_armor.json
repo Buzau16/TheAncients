@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "theancients:ethereal_arcane_helmet",
+    "theancients:ethereal_arcane_chestplate",
+    "theancients:ethereal_arcane_leggings",
+    "theancients:ethereal_arcane_boots"
+  ]
+}

@@ -1,5 +1,15 @@
 {
   "block.theancients.ancient_dirt": "Ancient Dirt",
   "block.theancients.ancient_grass_block": "Ancient Grass Block",
+  "block.theancients.ethereal_arcane_ore": "Ethereal Arcane Ore",
+
+  "item.theancients.raw_ethereal_arcane_ore": "Raw Ethereal Arcane Ore",
+  "item.theancients.ethereal_arcane_ingot": "Ethereal Arcane Ingot",
+
+  "item.theancients.ethereal_arcane_helmet": "Ethereal Arcane Helmet",
+  "item.theancients.ethereal_arcane_chestplate": "Ethereal Arcane Chestplate",
+  "item.theancients.ethereal_arcane_leggings": "Ethereal Arcane Leggings",
+  "item.theancients.ethereal_arcane_boots": "Ethereal Arcane Boots",
+
   "itemgroup.theancients": "The Ancients"
 }

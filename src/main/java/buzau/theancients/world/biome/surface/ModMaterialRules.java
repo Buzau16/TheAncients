@@ -43,7 +43,8 @@ public class ModMaterialRules {
         return MaterialRules.sequence(
                 MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.ENIGMATICWILDS),
                                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, ANCIENT_GRASS_BLOCK)),
-                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, ANCIENT_DIRT)),
+                        MaterialRules.condition(isAtOrAboveWaterLevel, ANCIENT_GRASS_BLOCK), ANCIENT_DIRT),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6, ANCIENT_DIRT),
 
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, customGrassSurface)
         );

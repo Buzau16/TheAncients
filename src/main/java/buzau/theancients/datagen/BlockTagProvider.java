@@ -16,8 +16,14 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.ETHEREAL_ARCANE_ORE);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.ETHEREAL_ARCANE_ORE);
+
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.ANCIENT_DIRT)
-                .add(ModBlocks.ANCIENT_DIRT);
+                .add(ModBlocks.ANCIENT_GRASS_BLOCK);
     }
 }
