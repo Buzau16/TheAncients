@@ -2,35 +2,10 @@
   "type": "theancients:theelderrealm_type",
   "generator": {
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld",
+    "settings": "theancients:elder_realm_noise_settings",
     "biome_source": {
-      "type": "minecraft:multi_noise",
-      "biomes": [
-        {
-          "biome": "theancients:enigmatic_wilds",
-          "parameters": {
-            "temperature": 0.1,
-            "humidity": 0.01,
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": 0,
-            "depth": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "minecraft:birch_forest",
-          "parameters": {
-            "temperature": -0.1,
-            "humidity": -0.1,
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": 0,
-            "depth": 0,
-            "offset": 0
-          }
-        }
-      ]
+      "type": "minecraft:fixed",
+      "biome": "theancients:enigmatic_wilds"
     }
   }
 }

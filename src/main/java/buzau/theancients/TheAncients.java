@@ -3,12 +3,13 @@ package buzau.theancients;
 import buzau.theancients.block.ModBlocks;
 import buzau.theancients.items.custom.ModItems;
 import buzau.theancients.items.custom.TheAncientsItemGroup;
-import buzau.theancients.world.biome.surface.ModMaterialRules;
 import net.fabricmc.api.ModInitializer;
 
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,23 +26,15 @@ public class TheAncients implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
-		ModMaterialRules.makeRules();
-
-		CustomPortalBuilder.beginPortal()
-				.frameBlock(Blocks.REINFORCED_DEEPSLATE)
-				.lightWithItem(Items.ENDER_EYE)
-				.destDimID(new Identifier(TheAncients.MOD_ID, "theelderrealm"))
-				.tintColor(0,49,84)
-				.setPortalSearchYRange(60, 70)
-				.setReturnPortalSearchYRange(60,100)
-				.registerPortal();
+		//ModMaterialRules.makeRules();
 
 //		CustomPortalBuilder.beginPortal()
-//				.frameBlock(Blocks.DIAMOND_BLOCK)
+//				.frameBlock(Blocks.REINFORCED_DEEPSLATE)
 //				.lightWithItem(Items.ENDER_EYE)
-//				.destDimID(new Identifier("the_end"))
-//				.tintColor(45,65,101)
+//				.destDimID(new Identifier(TheAncients.MOD_ID, "theelderrealm"))
+//				.tintColor(0,49,84)
+//				.setPortalSearchYRange(60, 70)
+//				.setReturnPortalSearchYRange(60,100)
 //				.registerPortal();
 
 		ModBlocks.registerBlocks();

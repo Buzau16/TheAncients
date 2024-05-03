@@ -1,12 +1,9 @@
 package buzau.theancients;
 
 import buzau.theancients.datagen.*;
-import buzau.theancients.world.biome.ModBiomes;
-import buzau.theancients.world.dimension.TheElderRealm;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
-import net.minecraft.registry.RegistryKeys;
 
 public class TheAncientsDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -22,7 +19,7 @@ public class TheAncientsDataGenerator implements DataGeneratorEntrypoint {
 	}
 
 	public void buildRegistry(RegistryBuilder regBuilder){
-		regBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, TheElderRealm::bootstrapType);
-		regBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
+//		regBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, TheElderRealm::bootstrapType);
+//		regBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
 	}
 }

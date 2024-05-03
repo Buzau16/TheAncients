@@ -1,0 +1,33 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": true,
+  "effects": {
+    "fog_color": 6001640,
+    "foliage_color": 6130238,
+    "sky_color": 6001640,
+    "water_color": 3176627,
+    "water_fog_color": 3176627
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:trees_plains",
+      "minecraft:patch_grass_plain",
+      "minecraft:patch_sugar_cane"
+    ],
+    []
+  ]
+}
