@@ -1,13 +1,13 @@
 {
   "temperature": 0.8,
-  "downfall": 0.4,
-  "has_precipitation": true,
+  "downfall": 0,
+  "has_precipitation": false,
   "effects": {
-    "fog_color": 6001640,
+    "fog_color": 338482,
     "foliage_color": 6130238,
-    "sky_color": 6001640,
-    "water_color": 3176627,
-    "water_fog_color": 3176627
+    "sky_color": 338482,
+    "water_color": 338482,
+    "water_fog_color": 338482
   },
   "spawners": {},
   "spawn_costs": {},

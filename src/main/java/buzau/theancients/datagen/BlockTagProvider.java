@@ -1,6 +1,7 @@
 package buzau.theancients.datagen;
 
-import buzau.theancients.block.ModBlocks;
+import buzau.theancients.block.AncientsBlocks;
+import buzau.theancients.world.tree.AncientsSaplings;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -16,14 +17,21 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
+        getOrCreateTagBuilder(AncientsSaplings.PLANTABLE)
+                .add(AncientsBlocks.ANCIENT_GRASS_BLOCK)
+                .add(AncientsBlocks.ANCIENT_DIRT);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ETHEREAL_ARCANE_ORE);
+                .add(AncientsBlocks.ETHEREAL_ARCANE_ORE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.ETHEREAL_ARCANE_ORE);
+                .add(AncientsBlocks.ETHEREAL_ARCANE_ORE);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
-                .add(ModBlocks.ANCIENT_DIRT)
-                .add(ModBlocks.ANCIENT_GRASS_BLOCK);
+                .add(AncientsBlocks.ANCIENT_DIRT)
+                .add(AncientsBlocks.ANCIENT_GRASS_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(AncientsBlocks.LUMINESCENT_FOSSILITE);
     }
 }

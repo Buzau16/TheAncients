@@ -8,7 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class ModItems {
+public class AncientsItems {
 
     public static final Item RAW_ETHEREAL_ARCANE_ORE = registerItem("raw_ethereal_arcane_ore",
             new Item(new FabricItemSettings()));
@@ -17,13 +17,13 @@ public class ModItems {
 
 
     public static final Item ETHEREAL_ARCANE_HELMET = registerItem("ethereal_arcane_helmet",
-            new ArmorItem(ModArmorMaterials.ETHEREAL_ARCANE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(AncientsArmorMaterials.ETHEREAL_ARCANE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item ETHEREAL_ARCANE_CHESTPLATE = registerItem("ethereal_arcane_chestplate",
-            new ArmorItem(ModArmorMaterials.ETHEREAL_ARCANE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(AncientsArmorMaterials.ETHEREAL_ARCANE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item ETHEREAL_ARCANE_LEGGINGS = registerItem("ethereal_arcane_leggings",
-            new ArmorItem(ModArmorMaterials.ETHEREAL_ARCANE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(AncientsArmorMaterials.ETHEREAL_ARCANE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item ETHEREAL_ARCANE_BOOTS = registerItem("ethereal_arcane_boots",
-            new ArmorItem(ModArmorMaterials.ETHEREAL_ARCANE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(AncientsArmorMaterials.ETHEREAL_ARCANE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 

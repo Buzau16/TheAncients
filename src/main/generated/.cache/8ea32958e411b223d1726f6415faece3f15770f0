@@ -1,4 +1,7 @@
-// 1.20.4	2024-05-03T21:21:08.7693065	The Ancients/Block Loot Tables
+// 1.20.4	2024-05-09T23:26:05.7872043	The Ancients/Block Loot Tables
+30cbabd2a4e25a270abf1b96869a53a82062aec1 data\theancients\loot_tables\blocks\mystwood_leaves.json
 5525582770319f9d9788524cf7b16ce55e32ff3a data\theancients\loot_tables\blocks\ethereal_arcane_ore.json
 64fa49ed05361d9fd8f141c9a30131cae38c2c29 data\theancients\loot_tables\blocks\ancient_grass_block.json
 ec55888027e19ec8032ceb7d25071079f4fc794f data\theancients\loot_tables\blocks\ancient_dirt.json
+111b5348da6692b0f0563d4d30b6837a09fa56c9 data\theancients\loot_tables\blocks\mystwood_log.json
+98c20cb8a554dc90e43c9313e82314f0ac32f251 data\theancients\loot_tables\blocks\luminescent_fossilite.json

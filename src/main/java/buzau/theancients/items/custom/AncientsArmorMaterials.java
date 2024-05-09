@@ -3,16 +3,15 @@ package buzau.theancients.items.custom;
 import buzau.theancients.TheAncients;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial {
+public enum AncientsArmorMaterials implements ArmorMaterial {
     ETHEREAL_ARCANE("ethereal_arcane", 25, new int[] { 3, 8, 6, 3 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ETHEREAL_ARCANE_INGOT));
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f, 0.1f, () -> Ingredient.ofItems(buzau.theancients.items.custom.AncientsItems.ETHEREAL_ARCANE_INGOT));
     private static final int[] BASE_DURABILITY = new int[] {6, 8, 7, 5};
 
     private final String name;
@@ -24,8 +23,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
-     ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability,
-                             SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+     AncientsArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability,
+                            SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
