@@ -8,7 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 public class TheAncientsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(AncientsBlocks.MYSTWOOD_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(AncientsBlocks.MYSTWOOD_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AncientsBlocks.PRIMORDIAL_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AncientsBlocks.PRIMORDIAL_SAPLING, RenderLayer.getCutout());
     }
 }

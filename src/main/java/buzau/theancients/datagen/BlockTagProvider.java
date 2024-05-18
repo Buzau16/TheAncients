@@ -22,10 +22,14 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(AncientsBlocks.ANCIENT_DIRT);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(AncientsBlocks.ETHEREAL_ARCANE_ORE);
+                .add(AncientsBlocks.ETHEREAL_ARCANE_ORE)
+                .add(AncientsBlocks.ANCIENT_STONE)
+                .add(AncientsBlocks.ANCIENT_COBBLE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(AncientsBlocks.ETHEREAL_ARCANE_ORE);
+                .add(AncientsBlocks.ETHEREAL_ARCANE_ORE)
+                .add(AncientsBlocks.ANCIENT_STONE)
+                .add(AncientsBlocks.ANCIENT_COBBLE);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(AncientsBlocks.ANCIENT_DIRT)
@@ -33,5 +37,9 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(AncientsBlocks.LUMINESCENT_FOSSILITE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(AncientsBlocks.ANCIENT_STONE_WALL)
+                .add(AncientsBlocks.ANCIENT_COBBLE_WALL);
     }
 }

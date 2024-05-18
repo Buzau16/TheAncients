@@ -36,7 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "theancients:mystwood_sapling",
+          "Name": "theancients:primordial_sapling",
           "Properties": {
             "stage": "0"
           }

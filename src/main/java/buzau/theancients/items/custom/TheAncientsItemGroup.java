@@ -20,12 +20,23 @@ public class TheAncientsItemGroup {
 
                         entries.add(AncientsBlocks.ANCIENT_DIRT);
                         entries.add(AncientsBlocks.ANCIENT_GRASS_BLOCK);
+                        entries.add(AncientsBlocks.ANCIENT_STONE);
+                        entries.add(AncientsBlocks.ANCIENT_STONE_WALL);
+                        entries.add(AncientsBlocks.ANCIENT_STONE_SLAB);
+                        entries.add(AncientsBlocks.ANCIENT_STONE_STAIR);
+                        entries.add(AncientsBlocks.ANCIENT_COBBLE);
+                        entries.add(AncientsBlocks.ANCIENT_COBBLE_WALL);
+                        entries.add(AncientsBlocks.ANCIENT_COBBLE_SLAB);
+                        entries.add(AncientsBlocks.ANCIENT_COBBLE_STAIR);
                         entries.add(AncientsBlocks.ETHEREAL_ARCANE_ORE);
 
                         entries.add(AncientsBlocks.LUMINESCENT_FOSSILITE);
-                        entries.add(AncientsBlocks.MYSTWOOD_LEAVES);
-                        entries.add(AncientsBlocks.MYSTWOOD_LOG);
-                        entries.add(AncientsBlocks.MYSTWOOD_SAPLING);
+                        entries.add(AncientsBlocks.PRIMORDIAL_LEAVES);
+                        entries.add(AncientsBlocks.PRIMORDIAL_LOG);
+                        entries.add(AncientsBlocks.PRIMORDIAL_PLANKS);
+                        entries.add(AncientsBlocks.PRIMORDIAL_SLAB);
+                        entries.add(AncientsBlocks.PRIMORDIAL_STAIRS);
+                        entries.add(AncientsBlocks.PRIMORDIAL_SAPLING);
 
                         entries.add(AncientsItems.ETHEREAL_ARCANE_HELMET);
                         entries.add(AncientsItems.ETHEREAL_ARCANE_CHESTPLATE);

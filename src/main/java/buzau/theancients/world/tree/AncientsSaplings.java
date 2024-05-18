@@ -13,7 +13,7 @@ import java.util.Optional;
 
 public class AncientsSaplings extends SaplingBlock {
 
-    public static final TagKey<Block> PLANTABLE = of("adirt");
+    public static final TagKey<Block> PLANTABLE = of("ancient_dirt");
 
     public final static SaplingGenerator MYSTWOOD = new SaplingGenerator("mystwood", 0.f,
             Optional.empty(), Optional.empty(), Optional.of(AncientsConfiguredFeature.MYSTWOOD_KEY),

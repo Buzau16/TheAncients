@@ -3,10 +3,20 @@
   "block.theancients.ancient_grass_block": "Ancient Grass Block",
   "block.theancients.ethereal_arcane_ore": "Ethereal Arcane Ore",
 
+  "block.theancients.ancient_stone": "Ancient Stone",
+  "block.theancients.ancient_stone_stairs": "Ancient Stone Stairs",
+  "block.theancients.ancient_stone_slab": "Ancient Stone Slab",
+  "block.theancients.ancient_stone_wall": "Ancient Stone Wall",
+
+  "block.theancients.ancient_cobble": "Ancient Cobblestone",
+  "block.theancients.ancient_cobble_stairs": "Ancient Cobblestone Stairs",
+  "block.theancients.ancient_cobble_slab": "Ancient Cobblestone Slab",
+  "block.theancients.ancient_cobble_wall": "Ancient Cobblestone Wall",
+
   "block.theancients.luminescent_fossilite": "Luminescent Fossilite",
-  "block.theancients.mystwood_log": "Mystwood log",
-  "block.theancients.mystwood_leaves": "Mystwood Leaves",
-  "block.theancients.mystwood_sapling": "Mystwood Sapling",
+  "block.theancients.primordial_log": "Primordial log",
+  "block.theancients.primordial_leaves": "Primordial Leaves",
+  "block.theancients.primordial_sapling": "Primordial Sapling",
 
   "item.theancients.raw_ethereal_arcane_ore": "Raw Ethereal Arcane Ore",
   "item.theancients.ethereal_arcane_ingot": "Ethereal Arcane Ingot",

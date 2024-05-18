@@ -13,11 +13,19 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(AncientsBlocks.ANCIENT_DIRT);
-        addDrop(AncientsBlocks.ANCIENT_GRASS_BLOCK);
-
+        addDrop(AncientsBlocks.ANCIENT_COBBLE);
+//        addDropWithSilkTouch(AncientsBlocks.ANCIENT_GRASS_BLOCK);
+//        addDropWithSilkTouch(AncientsBlocks.ANCIENT_STONE);
+        addDrop(AncientsBlocks.ANCIENT_COBBLE_SLAB);
+        addDrop(AncientsBlocks.ANCIENT_COBBLE_STAIR);
+        addDrop(AncientsBlocks.ANCIENT_COBBLE_WALL);
+        addDrop(AncientsBlocks.ANCIENT_STONE_SLAB);
+        addDrop(AncientsBlocks.ANCIENT_STONE_STAIR);
+        addDrop(AncientsBlocks.ANCIENT_STONE_WALL);
         addDrop(AncientsBlocks.LUMINESCENT_FOSSILITE);
-        addDrop(AncientsBlocks.MYSTWOOD_LEAVES);
-        addDrop(AncientsBlocks.MYSTWOOD_LOG);
+        addDrop(AncientsBlocks.PRIMORDIAL_LEAVES, leavesDrops(AncientsBlocks.PRIMORDIAL_LEAVES, AncientsBlocks.PRIMORDIAL_SAPLING, 0.002f));
+        addDrop(AncientsBlocks.PRIMORDIAL_LOG);
+        addDrop(AncientsBlocks.PRIMORDIAL_PLANKS);
 
 
         addDrop(AncientsBlocks.ETHEREAL_ARCANE_ORE, AncientsItems.RAW_ETHEREAL_ARCANE_ORE);

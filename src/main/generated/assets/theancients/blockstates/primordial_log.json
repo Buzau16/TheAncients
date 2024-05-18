@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "theancients:block/primordial_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "theancients:block/primordial_log"
+    },
+    "axis=z": {
+      "model": "theancients:block/primordial_log_horizontal",
+      "x": 90
+    }
+  }
+}

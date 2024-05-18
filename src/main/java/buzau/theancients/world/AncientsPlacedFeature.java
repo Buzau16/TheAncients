@@ -24,7 +24,7 @@ public class AncientsPlacedFeature {
 
         register(context, MYSTWOOD_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(AncientsConfiguredFeature.MYSTWOOD_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2, 0.1f, 2),
-                        AncientsBlocks.MYSTWOOD_SAPLING));
+                        AncientsBlocks.PRIMORDIAL_SAPLING));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

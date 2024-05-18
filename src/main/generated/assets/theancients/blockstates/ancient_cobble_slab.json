@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "theancients:block/ancient_cobble_slab"
+    },
+    "type=double": {
+      "model": "theancients:block/ancient_cobble"
+    },
+    "type=top": {
+      "model": "theancients:block/ancient_cobble_slab_top"
+    }
+  }
+}

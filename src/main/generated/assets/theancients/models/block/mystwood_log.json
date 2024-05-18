@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "theancients:block/mystwood_log_top",
-    "side": "theancients:block/mystwood_log"
-  }
-}

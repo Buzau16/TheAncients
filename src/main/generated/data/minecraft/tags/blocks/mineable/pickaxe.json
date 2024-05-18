@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "theancients:ethereal_arcane_ore"
+    "theancients:ethereal_arcane_ore",
+    "theancients:ancient_stone",
+    "theancients:ancient_cobble"
   ]
 }
