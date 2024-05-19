@@ -19,6 +19,7 @@ import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
 
 public class AncientsConfiguredFeature {
 
+    // Register key for the tree
     public static final RegistryKey<ConfiguredFeature<?, ?>> MYSTWOOD_KEY = registerKey("mystwood");
 
 
@@ -49,6 +50,8 @@ public class AncientsConfiguredFeature {
 //                new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 
+
+    // --------------------------- QOL FUNCTIONS -------------------------------------
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheAncients.MOD_ID, name));
     }

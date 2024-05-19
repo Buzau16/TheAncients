@@ -13,39 +13,29 @@ import java.util.Optional;
 
 public class AncientsSaplings extends SaplingBlock {
 
+    // A tag for allowing the sapling/saplings to be placed on the custom dirt/grass
     public static final TagKey<Block> PLANTABLE = of("ancient_dirt");
 
+    // Creating the sapling/saplings
     public final static SaplingGenerator MYSTWOOD = new SaplingGenerator("mystwood", 0.f,
             Optional.empty(), Optional.empty(), Optional.of(AncientsConfiguredFeature.MYSTWOOD_KEY),
             Optional.empty(), Optional.empty(),
             Optional.empty());
     public AncientsSaplings(SaplingGenerator generator, Settings settings) {
         super(generator, settings);
-
-
     }
-
+    // (Copied off of the PlantBlock Class) Checks if the block clicked is in the "PLANTABLE" tag
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
         return floor.isIn(PLANTABLE);
     }
+
+    // Making the sapling/saplings placeable on different blocks using the canPlantOnTop method
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
         return this.canPlantOnTop(world.getBlockState(pos.down()), world, pos.down());
-//
-//        // floor.isIn(BlockTags.DIRT) || floor.isOf(Blocks.FARMLAND);
-////        BlockPos blockPos = pos.down();
-//
-//        if(state.isIn(PLANTABLE)){
-//
-////        return state.isOf(AncientsBlocks.ANCIENT_GRASS_BLOCK) || state.isOf(AncientsBlocks.ANCIENT_DIRT);
-////            TheAncients.LOGGER.info("Getting the grass block");
-////
-////            return true;
-//////            return super.canPlaceAt(state, world, pos); // world.getBlockState(blockPos)
-////        }return false;
-//        }
     }
 
+    // Used for making tags
     private static TagKey<Block> of(String id) {
         return TagKey.of(RegistryKeys.BLOCK, new Identifier(id));
     }

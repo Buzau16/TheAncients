@@ -31,8 +31,8 @@ public class TheAncients implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		//ModMaterialRules.makeRules();
 
+		// Generate the portal for the Elder Realm Dimension
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(Blocks.REINFORCED_DEEPSLATE)
 				.lightWithItem(Items.ENDER_EYE)
@@ -42,6 +42,7 @@ public class TheAncients implements ModInitializer {
 				.setReturnPortalSearchYRange(60,100)
 				.registerPortal();
 
+		// Registering things
 		AncientsBlocks.registerBlocks();
 		AncientsItems.registerModItems();
 		TheAncientsItemGroup.registerItemGroup();

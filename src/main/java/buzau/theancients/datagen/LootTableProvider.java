@@ -10,22 +10,29 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         super(dataOutput);
     }
 
+    // Basically what each block drops
     @Override
     public void generate() {
         addDrop(AncientsBlocks.ANCIENT_DIRT);
         addDrop(AncientsBlocks.ANCIENT_COBBLE);
-//        addDropWithSilkTouch(AncientsBlocks.ANCIENT_GRASS_BLOCK);
-//        addDropWithSilkTouch(AncientsBlocks.ANCIENT_STONE);
         addDrop(AncientsBlocks.ANCIENT_COBBLE_SLAB);
-        addDrop(AncientsBlocks.ANCIENT_COBBLE_STAIR);
+        addDrop(AncientsBlocks.ANCIENT_COBBLE_STAIRS);
         addDrop(AncientsBlocks.ANCIENT_COBBLE_WALL);
         addDrop(AncientsBlocks.ANCIENT_STONE_SLAB);
-        addDrop(AncientsBlocks.ANCIENT_STONE_STAIR);
+        addDrop(AncientsBlocks.ANCIENT_STONE_STAIRS);
         addDrop(AncientsBlocks.ANCIENT_STONE_WALL);
         addDrop(AncientsBlocks.LUMINESCENT_FOSSILITE);
         addDrop(AncientsBlocks.PRIMORDIAL_LEAVES, leavesDrops(AncientsBlocks.PRIMORDIAL_LEAVES, AncientsBlocks.PRIMORDIAL_SAPLING, 0.002f));
         addDrop(AncientsBlocks.PRIMORDIAL_LOG);
         addDrop(AncientsBlocks.PRIMORDIAL_PLANKS);
+        addDrop(AncientsBlocks.ANCIENT_STONE_BRICKS);
+        addDrop(AncientsBlocks.ANCIENT_STONE_BRICK_WALL);
+        addDrop(AncientsBlocks.ANCIENT_STONE_BRICK_STAIRS);
+        addDrop(AncientsBlocks.ANCIENT_STONE_BRICK_SLAB);
+        addDrop(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICKS);
+        addDrop(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_WALL);
+        addDrop(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_STAIRS);
+        addDrop(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_SLAB);
 
 
         addDrop(AncientsBlocks.ETHEREAL_ARCANE_ORE, AncientsItems.RAW_ETHEREAL_ARCANE_ORE);

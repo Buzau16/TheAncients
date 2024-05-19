@@ -17,6 +17,7 @@ import java.util.List;
 
 public class AncientsPlacedFeature {
 
+    // Register key for the sapling?
     public static final RegistryKey<PlacedFeature> MYSTWOOD_PLACED = registerKey("mystwood_placed");
 
     public static void boostrap(Registerable<PlacedFeature> context){
@@ -27,6 +28,7 @@ public class AncientsPlacedFeature {
                         AncientsBlocks.PRIMORDIAL_SAPLING));
     }
 
+    // --------------------------- QOL FUNCTIONS -------------------------------------
     public static RegistryKey<PlacedFeature> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheAncients.MOD_ID, name));
     }

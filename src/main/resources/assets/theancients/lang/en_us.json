@@ -8,6 +8,16 @@
   "block.theancients.ancient_stone_slab": "Ancient Stone Slab",
   "block.theancients.ancient_stone_wall": "Ancient Stone Wall",
 
+  "block.theancients.ancient_stone_bricks": "Ancient Stone Bricks",
+  "block.theancients.ancient_stone_brick_wall": "Ancient Stone Brick Wall",
+  "block.theancients.ancient_stone_brick_stairs": "Ancient Stone Brick Stairs",
+  "block.theancients.ancient_stone_brick_slab": "Ancient Stone Brick Slab",
+
+  "block.theancients.cracked_ancient_stone_bricks": "Cracked Ancient Stone Bricks",
+  "block.theancients.cracked_ancient_stone_brick_wall": "Cracked Ancient Stone Brick Wall",
+  "block.theancients.cracked_ancient_stone_brick_slab": "Cracked Ancient Stone Bricks Slab",
+  "block.theancients.cracked_ancient_stone_brick_stairs": "Cracked Ancient Stone Bricks Stairs",
+
   "block.theancients.ancient_cobble": "Ancient Cobblestone",
   "block.theancients.ancient_cobble_stairs": "Ancient Cobblestone Stairs",
   "block.theancients.ancient_cobble_slab": "Ancient Cobblestone Slab",

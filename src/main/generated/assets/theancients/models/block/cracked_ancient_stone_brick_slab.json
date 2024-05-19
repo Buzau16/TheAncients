@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "theancients:block/cracked_ancient_stone_bricks",
+    "side": "theancients:block/cracked_ancient_stone_bricks",
+    "top": "theancients:block/cracked_ancient_stone_bricks"
+  }
+}

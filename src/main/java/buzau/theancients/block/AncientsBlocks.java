@@ -11,6 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
+// Just making the blocks
 public class AncientsBlocks {
 
     public static Block ANCIENT_DIRT = registerBlock("ancient_dirt",
@@ -21,11 +22,29 @@ public class AncientsBlocks {
     public static Block ANCIENT_STONE = registerBlock("ancient_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.5f, 6.5f)));
     public static Block ANCIENT_STONE_SLAB = registerBlock("ancient_stone_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB).strength(3.f, 6.5f)));
+            new SlabBlock(FabricBlockSettings.copyOf(ANCIENT_STONE)));
     public static Block ANCIENT_STONE_WALL = registerBlock("ancient_stone_wall",
-            new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL).strength(3.f, 5.5f)));
-    public static Block ANCIENT_STONE_STAIR = registerBlock("ancient_stone_stairs",
-            new StairsBlock(ANCIENT_STONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS).strength(3.f, 6.5f)));
+            new WallBlock(FabricBlockSettings.copyOf(ANCIENT_STONE)));
+    public static Block ANCIENT_STONE_STAIRS = registerBlock("ancient_stone_stairs",
+            new StairsBlock(ANCIENT_STONE.getDefaultState(), FabricBlockSettings.copyOf(ANCIENT_STONE)));
+
+    public static Block ANCIENT_STONE_BRICKS = registerBlock("ancient_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).strength(2.f,6.f)));
+    public static Block ANCIENT_STONE_BRICK_SLAB = registerBlock("ancient_stone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ANCIENT_STONE_BRICKS)));
+    public static Block ANCIENT_STONE_BRICK_WALL = registerBlock("ancient_stone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ANCIENT_STONE_BRICKS)));
+    public static Block ANCIENT_STONE_BRICK_STAIRS = registerBlock("ancient_stone_brick_stairs",
+            new StairsBlock(ANCIENT_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ANCIENT_STONE_BRICKS)));
+
+    public static Block CRACKED_ANCIENT_STONE_BRICKS = registerBlock("cracked_ancient_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(ANCIENT_STONE_BRICKS)));
+    public static Block CRACKED_ANCIENT_STONE_BRICK_SLAB = registerBlock("cracked_ancient_stone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ANCIENT_STONE_BRICKS)));
+    public static Block CRACKED_ANCIENT_STONE_BRICK_WALL = registerBlock("cracked_ancient_stone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ANCIENT_STONE_BRICKS)));
+    public static Block CRACKED_ANCIENT_STONE_BRICK_STAIRS = registerBlock("cracked_ancient_stone_brick_stairs",
+            new StairsBlock(CRACKED_ANCIENT_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ANCIENT_STONE_BRICKS)));
 
 
     public static Block ANCIENT_COBBLE = registerBlock("ancient_cobble",
@@ -34,7 +53,7 @@ public class AncientsBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_SLAB).strength(2.5f, 6.5f)));
     public static Block ANCIENT_COBBLE_WALL = registerBlock("ancient_cobble_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL).strength(1.5f, 5.5f)));
-    public static Block ANCIENT_COBBLE_STAIR = registerBlock("ancient_cobble_stairs",
+    public static Block ANCIENT_COBBLE_STAIRS = registerBlock("ancient_cobble_stairs",
             new StairsBlock(ANCIENT_COBBLE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.COBBLESTONE_STAIRS).strength(2.5f, 6.5f)));
 
 
@@ -60,6 +79,7 @@ public class AncientsBlocks {
     public static Block PRIMORDIAL_LEAVES = registerBlock("primordial_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_LEAVES).luminance(state -> 4).nonOpaque()));
 
+    // --------------------------- QOL FUNCTIONS -------------------------------------
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TheAncients.MOD_ID, name), block);
@@ -70,6 +90,7 @@ public class AncientsBlocks {
                 new BlockItem(block, new FabricItemSettings()));
     }
 
+    // Called in the main class to register the blocks
     public static void registerBlocks(){
         TheAncients.LOGGER.info("Registering Blocks for " + TheAncients.MOD_ID);
     }

@@ -12,6 +12,7 @@ public class WorldDataProvider extends FabricDynamicRegistryProvider {
         super(output, registriesFuture);
     }
 
+    // For building configured features and placed features respective registries
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.CONFIGURED_FEATURE));

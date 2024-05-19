@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "theancients:block/cracked_ancient_stone_brick_slab"
+    },
+    "type=double": {
+      "model": "theancients:block/cracked_ancient_stone_bricks"
+    },
+    "type=top": {
+      "model": "theancients:block/cracked_ancient_stone_brick_slab_top"
+    }
+  }
+}

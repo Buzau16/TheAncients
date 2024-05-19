@@ -16,11 +16,15 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        // Used for the blocks that have stair,slab,wall,fence etc. variants
         BlockStateModelGenerator.BlockTexturePool cobble_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(AncientsBlocks.ANCIENT_COBBLE);
         BlockStateModelGenerator.BlockTexturePool stone_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(AncientsBlocks.ANCIENT_STONE);
         BlockStateModelGenerator.BlockTexturePool primordialPlanks_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(AncientsBlocks.PRIMORDIAL_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool stoneBricks_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(AncientsBlocks.ANCIENT_STONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedStoneBricks_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICKS);
 
 
+        // Registering the actual models
         blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.ANCIENT_DIRT);
         blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.ETHEREAL_ARCANE_ORE);
 
@@ -28,13 +32,21 @@ public class ModelProvider extends FabricModelProvider {
         primordialPlanks_pool.stairs(AncientsBlocks.PRIMORDIAL_STAIRS);
 
 
-        cobble_pool.stairs(AncientsBlocks.ANCIENT_COBBLE_STAIR);
+        cobble_pool.stairs(AncientsBlocks.ANCIENT_COBBLE_STAIRS);
         cobble_pool.slab(AncientsBlocks.ANCIENT_COBBLE_SLAB);
         cobble_pool.wall(AncientsBlocks.ANCIENT_COBBLE_WALL);
 
-        stone_pool.stairs(AncientsBlocks.ANCIENT_STONE_STAIR);
+        stone_pool.stairs(AncientsBlocks.ANCIENT_STONE_STAIRS);
         stone_pool.slab(AncientsBlocks.ANCIENT_STONE_SLAB);
         stone_pool.wall(AncientsBlocks.ANCIENT_STONE_WALL);
+
+        stoneBricks_pool.stairs(AncientsBlocks.ANCIENT_STONE_BRICK_STAIRS);
+        stoneBricks_pool.slab(AncientsBlocks.ANCIENT_STONE_BRICK_SLAB);
+        stoneBricks_pool.wall(AncientsBlocks.ANCIENT_STONE_BRICK_WALL);
+
+        crackedStoneBricks_pool.stairs(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_STAIRS);
+        crackedStoneBricks_pool.slab(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_SLAB);
+        crackedStoneBricks_pool.wall(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_WALL);
 
         //the model for the ancient grass block is generated externally because IDK how to generate it here
         blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.LUMINESCENT_FOSSILITE);
@@ -44,6 +56,7 @@ public class ModelProvider extends FabricModelProvider {
 
     }
 
+    // Registering the models for the armours/ items
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(buzau.theancients.items.custom.AncientsItems.RAW_ETHEREAL_ARCANE_ORE, Models.GENERATED);
