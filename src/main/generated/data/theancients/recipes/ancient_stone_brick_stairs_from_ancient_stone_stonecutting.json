@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "theancients:ancient_stone"
+  },
+  "result": "theancients:ancient_stone_brick_stairs"
+}

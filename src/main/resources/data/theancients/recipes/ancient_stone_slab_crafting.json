@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "theancients:ancient_stone"
+    }
+  },
+  "pattern": [
+    "SSS"
+  ],
+  "result": {
+    "item": "theancients:ancient_stone_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

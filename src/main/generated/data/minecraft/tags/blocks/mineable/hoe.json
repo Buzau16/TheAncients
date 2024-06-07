@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "theancients:primordial_leaves",
+    "theancients:primordial_sapling",
     "theancients:luminescent_fossilite"
   ]
 }

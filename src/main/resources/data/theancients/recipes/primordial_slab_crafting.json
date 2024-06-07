@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "W": {
+      "item": "theancients:primordial_planks"
+    }
+  },
+  "pattern": [
+    "WWW"
+  ],
+  "result": {
+    "item": "theancients:primordial_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

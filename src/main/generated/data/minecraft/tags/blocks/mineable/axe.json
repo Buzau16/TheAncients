@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "theancients:primordial_leaves",
+    "theancients:primordial_sapling",
+    "theancients:primordial_log",
+    "theancients:primordial_planks",
+    "theancients:primordial_slab",
+    "theancients:primordial_stairs",
+    "theancients:primordial_fence",
+    "theancients:primordial_fence_gate"
+  ]
+}

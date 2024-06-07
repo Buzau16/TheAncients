@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "theancients:primordial_log"
+    }
+  ],
+  "result": {
+    "item": "theancients:primordial_planks"
+  }
+}

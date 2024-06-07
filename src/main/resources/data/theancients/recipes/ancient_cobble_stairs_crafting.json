@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "theancients:ancient_cobble"
+    }
+  },
+  "pattern": [
+    "S",
+    "SS",
+    "SSS"
+  ],
+  "result": {
+    "item": "theancients:ancient_cobble_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

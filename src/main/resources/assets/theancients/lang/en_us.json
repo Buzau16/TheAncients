@@ -2,6 +2,7 @@
   "block.theancients.ancient_dirt": "Ancient Dirt",
   "block.theancients.ancient_grass_block": "Ancient Grass Block",
   "block.theancients.ethereal_arcane_ore": "Ethereal Arcane Ore",
+  "block.theancients.voidstone_ore": "VoidStone Ore",
 
   "block.theancients.ancient_stone": "Ancient Stone",
   "block.theancients.ancient_stone_stairs": "Ancient Stone Stairs",
@@ -33,6 +34,7 @@
 
   "item.theancients.raw_ethereal_arcane_ore": "Raw Ethereal Arcane Ore",
   "item.theancients.ethereal_arcane_ingot": "Ethereal Arcane Ingot",
+  "item.theancients.raw_voidstone_ore": "Raw VoidStone Ore",
 
   "item.theancients.ethereal_arcane_helmet": "Ethereal Arcane Helmet",
   "item.theancients.ethereal_arcane_chestplate": "Ethereal Arcane Chestplate",

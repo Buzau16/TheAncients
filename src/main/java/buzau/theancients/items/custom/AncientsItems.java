@@ -16,6 +16,9 @@ public class AncientsItems {
     public static final Item ETHEREAL_ARCANE_INGOT = registerItem("ethereal_arcane_ingot",
             new Item(new FabricItemSettings()));
 
+    public static final Item RAW_VOIDSTONE_ORE = registerItem("raw_voidstone_ore",
+            new Item(new FabricItemSettings()));
+
 
     // Creating the armours
     public static final Item ETHEREAL_ARCANE_HELMET = registerItem("ethereal_arcane_helmet",
@@ -37,6 +40,6 @@ public class AncientsItems {
 
     // Used in the main class for register the items
     public static void registerModItems() {
-        TheAncients.LOGGER.info("Registering Mod Items for " + TheAncients.MOD_ID);
+        TheAncients.LOGGER.info("Registering Items for " + TheAncients.MOD_ID);
     }
 }

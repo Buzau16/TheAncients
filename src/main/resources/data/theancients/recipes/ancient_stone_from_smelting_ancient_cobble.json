@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "group": "theancients",
+  "ingredient": {
+    "item": "theancients:ancient_cobble"
+  },
+  "result": "theancients:ancient_stone"
+}

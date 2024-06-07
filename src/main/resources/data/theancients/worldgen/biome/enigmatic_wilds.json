@@ -19,7 +19,10 @@
     [],
     [],
     [],
-    [],
+    [
+      "theancients:ore_ethereal_arcane",
+      "theancients:ore_voidstone"
+    ],
     [],
     [],
     [],

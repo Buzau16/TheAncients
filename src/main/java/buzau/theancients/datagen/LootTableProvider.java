@@ -33,8 +33,13 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         addDrop(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_WALL);
         addDrop(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_STAIRS);
         addDrop(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICK_SLAB);
+        addDrop(AncientsBlocks.PRIMORDIAL_STAIRS);
+        addDrop(AncientsBlocks.PRIMORDIAL_SLAB);
+        addDrop(AncientsBlocks.PRIMORDIAL_FENCE);
+        addDrop(AncientsBlocks.PRIMORDIAL_FENCE_GATE);
 
 
         addDrop(AncientsBlocks.ETHEREAL_ARCANE_ORE, AncientsItems.RAW_ETHEREAL_ARCANE_ORE);
+        addDrop(AncientsBlocks.VOIDSTONE_ORE, AncientsItems.RAW_VOIDSTONE_ORE);
     }
 }

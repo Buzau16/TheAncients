@@ -2,7 +2,7 @@
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,
-  "experience": 1.2,
+  "experience": 0.5,
   "group": "theancients",
   "ingredient": {
     "item": "theancients:ethereal_arcane_ore"

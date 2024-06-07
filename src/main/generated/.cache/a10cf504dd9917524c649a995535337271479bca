@@ -1,3 +1,7 @@
-// 1.20.4	2024-05-19T19:45:37.9472432	The Ancients/World Gen
-3189a7201ac25ccc317ccd6ad99702e3b3aff0d6 data\theancients\worldgen\placed_feature\mystwood_placed.json
-737524fe7084bf74d57c0c8d121f6ea8cd5a07eb data\theancients\worldgen\configured_feature\mystwood.json
+// 1.20.4	2024-06-07T23:17:18.486228	The Ancients/World Gen
+da240158ef21d01dc42828263cc3deb1963578ef data\theancients\worldgen\configured_feature\ore_ethereal_arcane.json
+a66a6888a63ab61590a4c3693467a65f81b0823a data\theancients\worldgen\placed_feature\ore_ethereal_arcane.json
+c5850cb8aefaaf56d05391116fafd10d27acbc17 data\theancients\worldgen\placed_feature\ore_voidstone.json
+737524fe7084bf74d57c0c8d121f6ea8cd5a07eb data\theancients\worldgen\configured_feature\tree_primordial.json
+edc7f9060e226ec39807ef126c6bf744ec452eb7 data\theancients\worldgen\configured_feature\ore_voidstone.json
+e25f1fcc3902395b6a318ed948f9728bde9a204a data\theancients\worldgen\placed_feature\tree_primordial.json

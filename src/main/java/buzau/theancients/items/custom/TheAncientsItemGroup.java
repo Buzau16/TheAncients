@@ -19,6 +19,8 @@ public class TheAncientsItemGroup {
 
                         entries.add(AncientsItems.RAW_ETHEREAL_ARCANE_ORE);
                         entries.add(AncientsItems.ETHEREAL_ARCANE_INGOT);
+                        entries.add(AncientsItems.RAW_VOIDSTONE_ORE);
+                        entries.add(AncientsBlocks.VOIDSTONE_ORE);
 
                         entries.add(AncientsBlocks.ANCIENT_DIRT);
                         entries.add(AncientsBlocks.ANCIENT_GRASS_BLOCK);
@@ -47,6 +49,8 @@ public class TheAncientsItemGroup {
                         entries.add(AncientsBlocks.PRIMORDIAL_SLAB);
                         entries.add(AncientsBlocks.PRIMORDIAL_STAIRS);
                         entries.add(AncientsBlocks.PRIMORDIAL_SAPLING);
+                        entries.add(AncientsBlocks.PRIMORDIAL_FENCE);
+                        entries.add(AncientsBlocks.PRIMORDIAL_FENCE_GATE);
 
                         entries.add(AncientsItems.ETHEREAL_ARCANE_HELMET);
                         entries.add(AncientsItems.ETHEREAL_ARCANE_CHESTPLATE);

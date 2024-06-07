@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:raw_voidstone_ore_from_blasting_voidstone_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_voidstone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theancients:voidstone_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_voidstone_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:raw_voidstone_ore_from_blasting_voidstone_ore"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "theancients",
+  "ingredient": {
+    "item": "theancients:ancient_stone_bricks"
+  },
+  "result": "theancients:cracked_ancient_stone_bricks"
+}

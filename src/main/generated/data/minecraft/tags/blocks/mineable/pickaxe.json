@@ -1,8 +1,25 @@
 {
   "replace": false,
   "values": [
-    "theancients:ethereal_arcane_ore",
+    "theancients:primordial_leaves",
+    "theancients:primordial_sapling",
     "theancients:ancient_stone",
-    "theancients:ancient_cobble"
+    "theancients:ancient_stone_slab",
+    "theancients:ancient_stone_wall",
+    "theancients:ancient_stone_stairs",
+    "theancients:ancient_stone_bricks",
+    "theancients:ancient_stone_brick_slab",
+    "theancients:ancient_stone_brick_stairs",
+    "theancients:ancient_stone_brick_wall",
+    "theancients:cracked_ancient_stone_bricks",
+    "theancients:cracked_ancient_stone_brick_slab",
+    "theancients:cracked_ancient_stone_brick_stairs",
+    "theancients:cracked_ancient_stone_brick_wall",
+    "theancients:ancient_cobble_stairs",
+    "theancients:ancient_cobble_wall",
+    "theancients:ancient_cobble_slab",
+    "theancients:ethereal_arcane_ore",
+    "theancients:ancient_cobble",
+    "theancients:voidstone_ore"
   ]
 }

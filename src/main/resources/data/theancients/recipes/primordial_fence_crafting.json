@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "theancients:primordial_planks"
+    }
+  },
+  "pattern": [
+    "WSW",
+    "WSW"
+  ],
+  "result": {
+    "item": "theancients:primordial_fence",
+    "count": 3
+  },
+  "show_notification": true
+}

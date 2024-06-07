@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "theancients:cracked_ancient_stone_bricks"
+    }
+  },
+  "pattern": [
+    "S",
+    "SS",
+    "SSS"
+  ],
+  "result": {
+    "item": "theancients:cracked_ancient_stone_brick_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

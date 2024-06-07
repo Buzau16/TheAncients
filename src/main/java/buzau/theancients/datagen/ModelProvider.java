@@ -27,10 +27,12 @@ public class ModelProvider extends FabricModelProvider {
         // Registering the actual models
         blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.ANCIENT_DIRT);
         blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.ETHEREAL_ARCANE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.VOIDSTONE_ORE);
 
         primordialPlanks_pool.slab(AncientsBlocks.PRIMORDIAL_SLAB);
         primordialPlanks_pool.stairs(AncientsBlocks.PRIMORDIAL_STAIRS);
-
+        primordialPlanks_pool.fence(AncientsBlocks.PRIMORDIAL_FENCE);
+        primordialPlanks_pool.fenceGate(AncientsBlocks.PRIMORDIAL_FENCE_GATE);
 
         cobble_pool.stairs(AncientsBlocks.ANCIENT_COBBLE_STAIRS);
         cobble_pool.slab(AncientsBlocks.ANCIENT_COBBLE_SLAB);
@@ -59,12 +61,13 @@ public class ModelProvider extends FabricModelProvider {
     // Registering the models for the armours/ items
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(buzau.theancients.items.custom.AncientsItems.RAW_ETHEREAL_ARCANE_ORE, Models.GENERATED);
-        itemModelGenerator.register(buzau.theancients.items.custom.AncientsItems.ETHEREAL_ARCANE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.RAW_ETHEREAL_ARCANE_ORE, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.ETHEREAL_ARCANE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.RAW_VOIDSTONE_ORE, Models.GENERATED);
 
-        itemModelGenerator.registerArmor(((ArmorItem) buzau.theancients.items.custom.AncientsItems.ETHEREAL_ARCANE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) AncientsItems.ETHEREAL_ARCANE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) AncientsItems.ETHEREAL_ARCANE_CHESTPLATE));
-        itemModelGenerator.registerArmor(((ArmorItem) buzau.theancients.items.custom.AncientsItems.ETHEREAL_ARCANE_LEGGINGS));
-        itemModelGenerator.registerArmor(((ArmorItem) buzau.theancients.items.custom.AncientsItems.ETHEREAL_ARCANE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) AncientsItems.ETHEREAL_ARCANE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) AncientsItems.ETHEREAL_ARCANE_BOOTS));
     }
 }

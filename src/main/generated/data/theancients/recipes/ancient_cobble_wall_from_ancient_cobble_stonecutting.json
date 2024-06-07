@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "theancients:ancient_cobble"
+  },
+  "result": "theancients:ancient_cobble_wall"
+}
