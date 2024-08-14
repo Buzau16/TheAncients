@@ -5,7 +5,6 @@ import buzau.theancients.items.custom.AncientsItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.book.RecipeCategory;
 
@@ -16,7 +15,8 @@ public class RecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> _ETHEREAL_ARCANE_BLOCK = List.of(AncientsBlocks.ETHEREAL_ARCANE_ORE);
     private static final List<ItemConvertible> _ETHEREAL_ARCANE_ORE = List.of(AncientsItems.RAW_ETHEREAL_ARCANE_ORE);
 
-    private static final List<ItemConvertible> _VOIDSTONE_BLOCK = List.of(AncientsBlocks.VOIDSTONE_ORE);
+//    private static final List<ItemConvertible> _VOIDSTONE_BLOCK = List.of(AncientsBlocks.VOIDSTONE_ORE);
+    private static final List<ItemConvertible> _VOIDSTONE_ORE = List.of(AncientsBlocks.VOIDSTONE_ORE);
     public RecipeProvider(FabricDataOutput output) {
         super(output);
     }
@@ -30,8 +30,11 @@ public class RecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, _ETHEREAL_ARCANE_ORE, RecipeCategory.MISC, AncientsItems.ETHEREAL_ARCANE_INGOT, 1.f, 200, "theancients");
         offerBlasting(exporter, _ETHEREAL_ARCANE_ORE, RecipeCategory.MISC, AncientsItems.ETHEREAL_ARCANE_INGOT, 0.5f, 100, "theancients");
 
-        offerSmelting(exporter, _VOIDSTONE_BLOCK, RecipeCategory.MISC, AncientsItems.RAW_VOIDSTONE_ORE, 1.5f, 200, "theancients");
-        offerBlasting(exporter, _VOIDSTONE_BLOCK, RecipeCategory.MISC, AncientsItems.RAW_VOIDSTONE_ORE, 1.f, 100, "theancients");
+//        offerSmelting(exporter, _VOIDSTONE_BLOCK, RecipeCategory.MISC, AncientsItems.VOIDSTONE_INGOT, 1.5f, 200, "theancients");
+//        offerBlasting(exporter, _VOIDSTONE_BLOCK, RecipeCategory.MISC, AncientsItems.VOIDSTONE_INGOT, 1.f, 100, "theancients");
+
+        offerSmelting(exporter, _VOIDSTONE_ORE, RecipeCategory.MISC, AncientsItems.VOIDSTONE_INGOT, 1.5f, 200, "theancients");
+        offerBlasting(exporter, _VOIDSTONE_ORE, RecipeCategory.MISC, AncientsItems.VOIDSTONE_INGOT, 1.f, 100, "theancients");
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AncientsBlocks.ANCIENT_STONE_SLAB, AncientsBlocks.ANCIENT_STONE, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AncientsBlocks.ANCIENT_STONE_STAIRS, AncientsBlocks.ANCIENT_STONE, 1);

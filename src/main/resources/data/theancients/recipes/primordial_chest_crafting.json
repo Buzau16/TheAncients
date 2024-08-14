@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "S": {
-      "item": "theancients:ancient_cobble"
+    "W": {
+      "item": "theancients:primordial_planks"
     }
   },
   "pattern": [
-    "S  ",
-    "SS ",
+    "SSS",
+    "S S",
     "SSS"
   ],
   "result": {
-    "item": "theancients:ancient_cobble_stairs",
-    "count": 4
+    "item": "theancients:primordial_chest",
+    "count": 1
   },
   "show_notification": true
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "theancients:raw_voidstone_ore"
+    }
+  },
+  "pattern": [
+    "II ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "theancients:voidstone_hoe",
+    "count": 1
+  },
+  "show_notification": true
+}

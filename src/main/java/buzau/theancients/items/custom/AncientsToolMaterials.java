@@ -1,13 +1,21 @@
 package buzau.theancients.items.custom;
 
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.sound.SoundEvent;
 
 import java.util.function.Supplier;
 
+import static buzau.theancients.items.custom.AncientsItems.ETHEREAL_ARCANE_INGOT;
+
 public enum AncientsToolMaterials implements ToolMaterial {
-    ;
+
+    // MiningLevels class contains all of the mining levels for different material!
+    ETHEREAL_TOOL_MATERIAL(MiningLevels.IRON, 400, 6.f, 3.f, 15,
+            () -> Ingredient.ofItems(ETHEREAL_ARCANE_INGOT)),
+    VOIDSTONE_TOOL_MATERIAL(MiningLevels.DIAMOND, 1600, 7.f, 4.f, 22,
+            () -> Ingredient.ofItems(AncientsItems.VOIDSTONE_INGOT)); // TODO: ADD A VOIDSTONE GEM THING
+
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;

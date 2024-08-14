@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "theancients:ethereal_arcane_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "theancients:ethereal_arcane_pickaxe",
+    "count": 1
+  },
+  "show_notification": true
+}

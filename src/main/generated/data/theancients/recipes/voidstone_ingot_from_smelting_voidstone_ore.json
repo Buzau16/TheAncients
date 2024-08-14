@@ -7,5 +7,5 @@
   "ingredient": {
     "item": "theancients:voidstone_ore"
   },
-  "result": "theancients:raw_voidstone_ore"
+  "result": "theancients:voidstone_ingot"
 }

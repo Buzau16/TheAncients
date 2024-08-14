@@ -2,12 +2,13 @@ package buzau.theancients.block;
 
 import buzau.theancients.TheAncients;
 import buzau.theancients.world.tree.AncientsSaplings;
+import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -80,26 +81,20 @@ public class AncientsBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.SHROOMLIGHT).mapColor(MapColor.BLUE).luminance(state -> 14)));
     public static Block PRIMORDIAL_LOG = registerBlock("primordial_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_LOG).strength(4.f)));
-
-    // TODO: ADD FENCE VARIANT AND RECIPE AND FENCE GATE!
-
-
     public static Block PRIMORDIAL_PLANKS = registerBlock("primordial_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.DARK_OAK_PLANKS).strength(4.f)));
-
     public static Block PRIMORDIAL_FENCE = registerBlock("primordial_fence",
             new FenceBlock(PRIMORDIAL_PLANKS.getSettings()));
-
     public static Block PRIMORDIAL_FENCE_GATE = registerBlock("primordial_fence_gate",
             new FenceGateBlock(WoodType.DARK_OAK, PRIMORDIAL_PLANKS.getSettings()));
     public static Block PRIMORDIAL_STAIRS = registerBlock("primordial_stairs",
             new StairsBlock(PRIMORDIAL_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.DARK_OAK_STAIRS).strength(4.f)));
     public static Block PRIMORDIAL_SLAB = registerBlock("primordial_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_SLAB).strength(4.f)));
+    public static final Block VASE = registerBlock("vase",
+            new VaseBlock(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque()));
 
     // TODO: add signs
-
-
     public static Block PRIMORDIAL_SAPLING = registerBlock("primordial_sapling",
             new AncientsSaplings(AncientsSaplings.PRIMORDIAL, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "theancients:raw_voidstone_ore"
+    }
+  },
+  "pattern": [
+    " I ",
+    " I ",
+    " S "
+  ],
+  "result": {
+    "item": "theancients:voidstone_sword",
+    "count": 1
+  },
+  "show_notification": true
+}

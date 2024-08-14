@@ -37,6 +37,8 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         addDrop(AncientsBlocks.PRIMORDIAL_SLAB);
         addDrop(AncientsBlocks.PRIMORDIAL_FENCE);
         addDrop(AncientsBlocks.PRIMORDIAL_FENCE_GATE);
+        addDrop(AncientsBlocks.VASE);
+
 
 
         addDrop(AncientsBlocks.ETHEREAL_ARCANE_ORE, AncientsItems.RAW_ETHEREAL_ARCANE_ORE);

@@ -19,8 +19,23 @@ public class TheAncientsItemGroup {
 
                         entries.add(AncientsItems.RAW_ETHEREAL_ARCANE_ORE);
                         entries.add(AncientsItems.ETHEREAL_ARCANE_INGOT);
-                        entries.add(AncientsItems.RAW_VOIDSTONE_ORE);
-                        entries.add(AncientsBlocks.VOIDSTONE_ORE);
+
+                        entries.add(AncientsItems.ETHEREAL_ARCANE_PICKAXE);
+                        entries.add(AncientsItems.ETHEREAL_ARCANE_AXE);
+                        entries.add(AncientsItems.ETHEREAL_ARCANE_SWORD);
+                        entries.add(AncientsItems.ETHEREAL_ARCANE_SHOVEL);
+                        entries.add(AncientsItems.ETHEREAL_ARCANE_HOE);
+
+                        entries.add(AncientsItems.VOIDSTONE_INGOT);
+
+                        entries.add(AncientsItems.VOIDSTONE_PICKAXE);
+                        entries.add(AncientsItems.VOIDSTONE_AXE);
+                        entries.add(AncientsItems.VOIDSTONE_SWORD);
+                        entries.add(AncientsItems.VOIDSTONE_SHOVEL);
+                        entries.add(AncientsItems.VOIDSTONE_HOE);
+
+
+
 
                         entries.add(AncientsBlocks.ANCIENT_DIRT);
                         entries.add(AncientsBlocks.ANCIENT_GRASS_BLOCK);
@@ -40,6 +55,8 @@ public class TheAncientsItemGroup {
                         entries.add(AncientsBlocks.ANCIENT_COBBLE_WALL);
                         entries.add(AncientsBlocks.ANCIENT_COBBLE_SLAB);
                         entries.add(AncientsBlocks.ANCIENT_COBBLE_STAIRS);
+
+                        entries.add(AncientsBlocks.VOIDSTONE_ORE);
                         entries.add(AncientsBlocks.ETHEREAL_ARCANE_ORE);
 
                         entries.add(AncientsBlocks.LUMINESCENT_FOSSILITE);
@@ -51,6 +68,7 @@ public class TheAncientsItemGroup {
                         entries.add(AncientsBlocks.PRIMORDIAL_SAPLING);
                         entries.add(AncientsBlocks.PRIMORDIAL_FENCE);
                         entries.add(AncientsBlocks.PRIMORDIAL_FENCE_GATE);
+                        entries.add(AncientsBlocks.VASE);
 
                         entries.add(AncientsItems.ETHEREAL_ARCANE_HELMET);
                         entries.add(AncientsItems.ETHEREAL_ARCANE_CHESTPLATE);

@@ -12,6 +12,7 @@ import java.util.function.Supplier;
 public enum AncientsArmorMaterials implements ArmorMaterial {
     ETHEREAL_ARCANE("ethereal_arcane", 25, new int[] { 3, 8, 6, 3 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f, 0.1f, () -> Ingredient.ofItems(AncientsItems.ETHEREAL_ARCANE_INGOT));
+    // TODO: ADD VOIDSTONE ARMOR
     private static final int[] BASE_DURABILITY = new int[] {6, 8, 7, 5};
 
     private final String name;

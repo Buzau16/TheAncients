@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:raw_voidstone_ore_from_smelting_voidstone_ore"
+        "recipe": "minecraft:voidstone_ingot_from_smelting_voidstone_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:raw_voidstone_ore_from_smelting_voidstone_ore"
+      "minecraft:voidstone_ingot_from_smelting_voidstone_ore"
     ]
   }
 }

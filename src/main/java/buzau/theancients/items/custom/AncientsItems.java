@@ -2,8 +2,7 @@ package buzau.theancients.items.custom;
 
 import buzau.theancients.TheAncients;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -16,8 +15,35 @@ public class AncientsItems {
     public static final Item ETHEREAL_ARCANE_INGOT = registerItem("ethereal_arcane_ingot",
             new Item(new FabricItemSettings()));
 
+    // TODO: ADD A SMELTED VARIANT!
+
     public static final Item RAW_VOIDSTONE_ORE = registerItem("raw_voidstone_ore",
             new Item(new FabricItemSettings()));
+    public static final Item VOIDSTONE_INGOT = registerItem("voidstone_ingot",
+            new Item(new FabricItemSettings()));
+
+
+    public static final Item ETHEREAL_ARCANE_PICKAXE = registerItem("ethereal_arcane_pickaxe",
+            new PickaxeItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, 1, -3f, new FabricItemSettings()));
+    public static final Item ETHEREAL_ARCANE_AXE = registerItem("ethereal_arcane_axe",
+            new AxeItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, 4.5f, -3f, new FabricItemSettings()));
+    public static final Item ETHEREAL_ARCANE_SWORD = registerItem("ethereal_arcane_sword",
+            new SwordItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, 2, -2.5f, new FabricItemSettings()));
+    public static final Item ETHEREAL_ARCANE_SHOVEL = registerItem("ethereal_arcane_shovel",
+            new ShovelItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, 1.6f, -3f, new FabricItemSettings()));
+    public static final Item ETHEREAL_ARCANE_HOE = registerItem("ethereal_arcane_hoe",
+            new HoeItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, -2, -2.5f, new FabricItemSettings()));
+
+    public static final Item VOIDSTONE_PICKAXE = registerItem("voidstone_pickaxe",
+            new PickaxeItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, 1, -2.5f, new FabricItemSettings()));
+    public static final Item VOIDSTONE_AXE = registerItem("voidstone_axe",
+            new AxeItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, 5f, -3.5f, new FabricItemSettings()));
+    public static final Item VOIDSTONE_SWORD = registerItem("voidstone_sword",
+            new SwordItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, 3, -2.5f, new FabricItemSettings()));
+    public static final Item VOIDSTONE_SHOVEL = registerItem("voidstone_shovel",
+            new ShovelItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, 1.6f, -3f, new FabricItemSettings()));
+    public static final Item VOIDSTONE_HOE = registerItem("voidstone_hoe",
+            new HoeItem(AncientsToolMaterials.ETHEREAL_TOOL_MATERIAL, -3, 0f, new FabricItemSettings()));
 
 
     // Creating the armours

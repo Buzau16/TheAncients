@@ -23,7 +23,6 @@ public class ModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool stoneBricks_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(AncientsBlocks.ANCIENT_STONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool crackedStoneBricks_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(AncientsBlocks.CRACKED_ANCIENT_STONE_BRICKS);
 
-
         // Registering the actual models
         blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.ANCIENT_DIRT);
         blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.ETHEREAL_ARCANE_ORE);
@@ -56,6 +55,8 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(AncientsBlocks.PRIMORDIAL_LEAVES);
         blockStateModelGenerator.registerTintableCross(AncientsBlocks.PRIMORDIAL_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerSimpleState(AncientsBlocks.VASE);
+
     }
 
     // Registering the models for the armours/ items
@@ -63,7 +64,23 @@ public class ModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(AncientsItems.RAW_ETHEREAL_ARCANE_ORE, Models.GENERATED);
         itemModelGenerator.register(AncientsItems.ETHEREAL_ARCANE_INGOT, Models.GENERATED);
+
         itemModelGenerator.register(AncientsItems.RAW_VOIDSTONE_ORE, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.VOIDSTONE_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(AncientsItems.ETHEREAL_ARCANE_PICKAXE, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.ETHEREAL_ARCANE_AXE, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.ETHEREAL_ARCANE_SWORD, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.ETHEREAL_ARCANE_SHOVEL, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.ETHEREAL_ARCANE_HOE, Models.GENERATED);
+
+        itemModelGenerator.register(AncientsItems.VOIDSTONE_PICKAXE, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.VOIDSTONE_AXE, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.VOIDSTONE_SWORD, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.VOIDSTONE_SHOVEL, Models.GENERATED);
+        itemModelGenerator.register(AncientsItems.VOIDSTONE_HOE, Models.GENERATED);
+
+
 
         itemModelGenerator.registerArmor(((ArmorItem) AncientsItems.ETHEREAL_ARCANE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) AncientsItems.ETHEREAL_ARCANE_CHESTPLATE));

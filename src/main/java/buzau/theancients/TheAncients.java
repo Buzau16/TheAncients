@@ -1,6 +1,7 @@
 package buzau.theancients;
 
 import buzau.theancients.block.AncientsBlocks;
+import buzau.theancients.entity.AncientsEntities;
 import buzau.theancients.items.custom.AncientsItems;
 import buzau.theancients.items.custom.TheAncientsItemGroup;
 import net.fabricmc.api.ModInitializer;
@@ -44,6 +45,7 @@ public class TheAncients implements ModInitializer {
 
 		// Registering things
 		AncientsBlocks.registerBlocks();
+		AncientsEntities.registerEntities();
 		AncientsItems.registerModItems();
 		TheAncientsItemGroup.registerItemGroup();
 	}
