@@ -55,28 +55,32 @@ public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
         int prevStackItemCount;
         // Check if the player is holding something
         if(!player.getStackInHand(hand).isEmpty()){
-            // loop through the slots of the vase to see if they are empty
+            // loop through the slots of the vase
             for(int slot = 0; slot < blockEntity.size(); slot++){
+                // Check if the slot is empty,
+                // If it is then copy whatever the player has in hand to the current slot and remove the item/items from the players hand
                 if(blockEntity.getStack(slot).isEmpty()){
                     blockEntity.setStack(slot, player.getStackInHand(hand).copy());
                     player.getStackInHand(hand).setCount(0);
-                    System.out.println(blockEntity.getStack(slot));
                     return ActionResult.SUCCESS;
                 }
+                // If it's not empty check if the current item matches the item that player is holding
+                // If it matches add the amount of items that player is holding to current slot
                 if(blockEntity.getStack(slot).getItem() == player.getStackInHand(hand).getItem()){
                     prevStackItemCount = blockEntity.getStack(slot).getCount();
                     blockEntity.getStack(slot).setCount(prevStackItemCount + player.getStackInHand(hand).getCount());
                     player.getStackInHand(hand).setCount(0);
-                    System.out.println(blockEntity.getStack(slot));
                     return ActionResult.SUCCESS;
                     }
                 }
         }else{
+            // Loop backwards through the inventory
             for(int slot = blockEntity.size() - 1; slot >= 0; slot--){
+                // Check if they have something in them
+                // If they have offer or drop the to the player and remove them from the slot
                 if(!blockEntity.getStack(slot).isEmpty()){
                     player.getInventory().offerOrDrop(blockEntity.getStack(slot));
                     blockEntity.removeStack(slot);
-                    System.out.println(blockEntity.getStack(slot));
                     return ActionResult.SUCCESS;
                 }
             }
