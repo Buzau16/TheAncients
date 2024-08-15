@@ -1,7 +1,7 @@
-// 1.20.4	2024-08-14T23:59:39.2641976	The Ancients/Tags for minecraft:block
+// 1.20.4	2024-08-15T11:29:49.7529166	The Ancients/Tags for minecraft:block
 c561f987306d0b30f93ab79b6e5452828a0ee93a data\minecraft\tags\blocks\ancient_stone_replaceable.json
-49f39c6b5e5f70e461f4b3508e2e0234707dcb9a data\minecraft\tags\blocks\wooden_fences.json
 d7275a596680dfceb7e9fa3d4e01143f98d76908 data\minecraft\tags\blocks\walls.json
+49f39c6b5e5f70e461f4b3508e2e0234707dcb9a data\minecraft\tags\blocks\wooden_fences.json
 af3afbef8f51261f86436b7a8799875692184263 data\minecraft\tags\blocks\primordial_log.json
 8b4965d4026fae2a81c9f47aeec56aadd7256ce0 data\minecraft\tags\blocks\mineable\hoe.json
 3fbabc7c3ab2f94c71b772b3cfd06206245e1b33 data\minecraft\tags\blocks\mineable\axe.json
@@ -9,7 +9,7 @@ af3afbef8f51261f86436b7a8799875692184263 data\minecraft\tags\blocks\primordial_l
 98effe7be9b17eaa14df89d14ceeeff6d0f97572 data\minecraft\tags\blocks\ancient_dirt.json
 f2a32040cebb0ed3bcb2832fb1f44a723a7af2d7 data\minecraft\tags\blocks\logs.json
 d8867a7c0dd65ca9e1324bebdf08a8c3089f85d5 data\minecraft\tags\blocks\needs_iron_tool.json
-76712b6dcc5f25f83236312e1666a1460a948c5d data\minecraft\tags\blocks\mineable\pickaxe.json
+8af8a9bc8a6edc6cebc169b1475220a14e7da705 data\minecraft\tags\blocks\mineable\pickaxe.json
 cec34a2696287a67377369db07c3688c5dacc80d data\minecraft\tags\blocks\fence_gates.json
 2e1138ee094185f07ef0b6f69690b46fa4a48108 data\minecraft\tags\blocks\leaves.json
 6cfa5b82d10b3831f2da10dc8d40d45450f07b15 data\minecraft\tags\blocks\needs_stone_tool.json

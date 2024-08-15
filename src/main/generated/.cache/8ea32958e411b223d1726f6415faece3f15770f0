@@ -1,10 +1,10 @@
-// 1.20.4	2024-08-14T23:59:39.2606263	The Ancients/Block Loot Tables
+// 1.20.4	2024-08-15T11:29:49.7413998	The Ancients/Block Loot Tables
 be60df349f89f49b04761368fa4ceed7fd904af9 data\theancients\loot_tables\blocks\ancient_stone_brick_slab.json
 5525582770319f9d9788524cf7b16ce55e32ff3a data\theancients\loot_tables\blocks\ethereal_arcane_ore.json
 29c2d33e3503f21cb52eeb3f31975267261a4efa data\theancients\loot_tables\blocks\ancient_stone_wall.json
 42df454dc53f606e70e5d4ce44ce719373fc689d data\theancients\loot_tables\blocks\primordial_fence_gate.json
-ca5fe587cef6009fb186c2426732b47f6b9ea935 data\theancients\loot_tables\blocks\cracked_ancient_stone_brick_wall.json
 aa19c23fce341b89abbc86392d13d53a1027e5fa data\theancients\loot_tables\blocks\cracked_ancient_stone_brick_stairs.json
+ca5fe587cef6009fb186c2426732b47f6b9ea935 data\theancients\loot_tables\blocks\cracked_ancient_stone_brick_wall.json
 6bd3bd4989947e8c33c4977997885a7c379ee697 data\theancients\loot_tables\blocks\ancient_cobble_wall.json
 119c30443eec626da26a96e35fadec62617cbca5 data\theancients\loot_tables\blocks\primordial_slab.json
 203a26d8d940b1270e253c366f8279e6781f0298 data\theancients\loot_tables\blocks\voidstone_ore.json

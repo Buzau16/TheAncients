@@ -94,6 +94,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(AncientsBlocks.ANCIENT_COBBLE_SLAB)
                 .add(AncientsBlocks.ETHEREAL_ARCANE_ORE)
                 .add(AncientsBlocks.ANCIENT_COBBLE)
+                .add(AncientsBlocks.VASE)
                 .add(AncientsBlocks.VOIDSTONE_ORE);
 
         // What blocks require a shovel to be able to be mined
