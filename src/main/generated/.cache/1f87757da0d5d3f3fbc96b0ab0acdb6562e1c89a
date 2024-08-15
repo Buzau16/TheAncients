@@ -1,7 +1,7 @@
-// 1.20.4	2024-08-15T11:29:49.7529166	The Ancients/Tags for minecraft:block
+// 1.20.4	2024-08-15T17:12:11.2015215	The Ancients/Tags for minecraft:block
 c561f987306d0b30f93ab79b6e5452828a0ee93a data\minecraft\tags\blocks\ancient_stone_replaceable.json
-d7275a596680dfceb7e9fa3d4e01143f98d76908 data\minecraft\tags\blocks\walls.json
 49f39c6b5e5f70e461f4b3508e2e0234707dcb9a data\minecraft\tags\blocks\wooden_fences.json
+d7275a596680dfceb7e9fa3d4e01143f98d76908 data\minecraft\tags\blocks\walls.json
 af3afbef8f51261f86436b7a8799875692184263 data\minecraft\tags\blocks\primordial_log.json
 8b4965d4026fae2a81c9f47aeec56aadd7256ce0 data\minecraft\tags\blocks\mineable\hoe.json
 3fbabc7c3ab2f94c71b772b3cfd06206245e1b33 data\minecraft\tags\blocks\mineable\axe.json

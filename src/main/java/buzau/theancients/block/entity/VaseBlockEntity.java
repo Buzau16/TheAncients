@@ -1,6 +1,5 @@
-package buzau.theancients.entity.block;
+package buzau.theancients.block.entity;
 
-import buzau.theancients.entity.AncientsEntities;
 import buzau.theancients.util.ImplementedInventory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;

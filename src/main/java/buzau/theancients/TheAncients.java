@@ -1,7 +1,7 @@
 package buzau.theancients;
 
 import buzau.theancients.block.AncientsBlocks;
-import buzau.theancients.entity.AncientsEntities;
+import buzau.theancients.block.entity.AncientsEntities;
 import buzau.theancients.items.custom.AncientsItems;
 import buzau.theancients.items.custom.TheAncientsItemGroup;
 import net.fabricmc.api.ModInitializer;

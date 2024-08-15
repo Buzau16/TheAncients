@@ -1,21 +1,19 @@
 package buzau.theancients.block;
 
 import buzau.theancients.TheAncients;
-import buzau.theancients.entity.AncientsEntities;
-import buzau.theancients.entity.block.VaseBlockEntity;
+import buzau.theancients.block.entity.AncientsEntities;
+import buzau.theancients.block.entity.VaseBlockEntity;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.ShulkerBoxBlockEntity;
-import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.loot.context.LootContextParameterSet;
+import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ItemScatterer;
@@ -25,6 +23,10 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
+
+import static net.minecraft.block.ShulkerBoxBlock.CONTENTS_DYNAMIC_DROP_ID;
 
 public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final MapCodec<VaseBlock> CODEC = VaseBlock.createCodec(VaseBlock::new);
@@ -79,6 +81,7 @@ public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
                 // Check if they have something in them
                 // If they have offer or drop the to the player and remove them from the slot
                 if(!blockEntity.getStack(slot).isEmpty()){
+                    System.out.println(blockEntity.getStack(slot));
                     player.getInventory().offerOrDrop(blockEntity.getStack(slot));
                     blockEntity.removeStack(slot);
                     return ActionResult.SUCCESS;
@@ -89,29 +92,32 @@ public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
     }
 
     @Override
-    public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        Inventory blockEntity = (Inventory) world.getBlockEntity(pos);
-        VaseBlockEntity entity = (VaseBlockEntity) blockEntity;
+    public List<ItemStack> getDroppedStacks(BlockState state, LootContextParameterSet.Builder builder) {
+        BlockEntity blockEntity = builder.getOptional(LootContextParameters.BLOCK_ENTITY);
         if (blockEntity instanceof VaseBlockEntity) {
-            if (!world.isClient && player.isCreative() && !blockEntity.isEmpty()) {
-            } else {
-            }
+            VaseBlockEntity vaseBlockEntity = (VaseBlockEntity) blockEntity;
+            builder = builder.addDynamicDrop(CONTENTS_DYNAMIC_DROP_ID, lootConsumer -> {
+                for (int i = 0; i < vaseBlockEntity.size(); ++i) {
+                    lootConsumer.accept(vaseBlockEntity.getStack(i));
+                }
+            });
+            TheAncients.LOGGER.info("running");
         }
-        return super.onBreak(world, pos, state, player);
+        return super.getDroppedStacks(state, builder);
     }
 
-    @Override
-    public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
-        if (state.getBlock() != newState.getBlock()) {
-            BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof VaseBlockEntity) {
-                ItemScatterer.spawn(world, pos, (VaseBlockEntity)blockEntity);
-                // update comparators
-                world.updateComparators(pos,this);
-            }
-            super.onStateReplaced(state, world, pos, newState, moved);
-        }
-    }
+//    @Override
+//    public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
+//        if (state.getBlock() != newState.getBlock()) {
+//            BlockEntity blockEntity = world.getBlockEntity(pos);
+//            if (blockEntity instanceof VaseBlockEntity) {
+//                ItemScatterer.spawn(world, pos, (VaseBlockEntity)blockEntity);
+//                // update comparators
+//                world.updateComparators(pos,this);
+//            }
+//            super.onStateReplaced(state, world, pos, newState, moved);
+//        }
+//    }
 
     @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
