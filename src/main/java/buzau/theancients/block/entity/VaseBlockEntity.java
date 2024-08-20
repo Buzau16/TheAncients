@@ -24,6 +24,10 @@ public class VaseBlockEntity extends BlockEntity implements ImplementedInventory
     public static void tick(World world1, BlockPos pos, BlockState state1, VaseBlockEntity be) {
     }
 
+    public int getContainerSize() {
+        return this.ITEMS.size();
+    }
+
     @Override
     public DefaultedList<ItemStack> getItems() {
         return ITEMS;
@@ -51,4 +55,6 @@ public class VaseBlockEntity extends BlockEntity implements ImplementedInventory
         Inventories.writeNbt(nbt, ITEMS);
         super.writeNbt(nbt);
     }
+
+
 }

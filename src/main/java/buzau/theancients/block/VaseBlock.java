@@ -16,6 +16,7 @@ import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -30,6 +31,7 @@ import static net.minecraft.block.ShulkerBoxBlock.CONTENTS_DYNAMIC_DROP_ID;
 
 public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final MapCodec<VaseBlock> CODEC = VaseBlock.createCodec(VaseBlock::new);
+    private static final Identifier CONTENTS = new Identifier("contents");
     private static final VoxelShape SHAPE = VaseBlock.createCuboidShape(5,0,5,11,10,11);
     public VaseBlock(Settings settings) {
         super(settings);
@@ -51,6 +53,8 @@ public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
         return BlockRenderType.MODEL;
     }
 
+
+    // TODO: Add dispenser-like inventory
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         Inventory blockEntity = (Inventory) world.getBlockEntity(pos);
@@ -64,7 +68,6 @@ public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
                 if(blockEntity.getStack(slot).isEmpty()){
                     blockEntity.setStack(slot, player.getStackInHand(hand).copy());
                     player.getStackInHand(hand).setCount(0);
-                    return ActionResult.SUCCESS;
                 }
                 // If it's not empty check if the current item matches the item that player is holding
                 // If it matches add the amount of items that player is holding to current slot
@@ -72,37 +75,32 @@ public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
                     prevStackItemCount = blockEntity.getStack(slot).getCount();
                     blockEntity.getStack(slot).setCount(prevStackItemCount + player.getStackInHand(hand).getCount());
                     player.getStackInHand(hand).setCount(0);
-                    return ActionResult.SUCCESS;
                     }
                 }
         }else{
             // Loop backwards through the inventory
             for(int slot = blockEntity.size() - 1; slot >= 0; slot--){
-                // Check if they have something in them
+                // Check if the block entity has some in the inventory slots
                 // If they have offer or drop the to the player and remove them from the slot
                 if(!blockEntity.getStack(slot).isEmpty()){
-                    System.out.println(blockEntity.getStack(slot));
-                    player.getInventory().offerOrDrop(blockEntity.getStack(slot));
-                    blockEntity.removeStack(slot);
-                    return ActionResult.SUCCESS;
+                    printInventory(blockEntity);
+//                    player.getInventory().offerOrDrop(blockEntity.getStack(slot));
+//                    blockEntity.removeStack(slot);
                 }
             }
         }
-        return ActionResult.FAIL;
+        return ActionResult.SUCCESS;
     }
 
     @Override
     public List<ItemStack> getDroppedStacks(BlockState state, LootContextParameterSet.Builder builder) {
-        BlockEntity blockEntity = builder.getOptional(LootContextParameters.BLOCK_ENTITY);
-        if (blockEntity instanceof VaseBlockEntity) {
-            VaseBlockEntity vaseBlockEntity = (VaseBlockEntity) blockEntity;
-            builder = builder.addDynamicDrop(CONTENTS_DYNAMIC_DROP_ID, lootConsumer -> {
-                for (int i = 0; i < vaseBlockEntity.size(); ++i) {
-                    lootConsumer.accept(vaseBlockEntity.getStack(i));
-                }
-            });
-            TheAncients.LOGGER.info("running");
-        }
+       if(builder.getOptional(LootContextParameters.BLOCK_ENTITY) instanceof VaseBlockEntity vaseEntity){
+           builder = builder.addDynamicDrop(CONTENTS, (lootConsumer -> {
+               for (int i = 0; i < vaseEntity.getContainerSize(); ++i) {
+                   lootConsumer.accept(vaseEntity.getStack(i));
+               }
+           }));
+       }
         return super.getDroppedStacks(state, builder);
     }
 
@@ -127,6 +125,12 @@ public class VaseBlock extends BlockWithEntity implements BlockEntityProvider {
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
         return validateTicker(type, AncientsEntities.VASE_BLOCK_ENTITY, (world1, pos, state1, be) -> VaseBlockEntity.tick(world1, pos, state1, be));
+    }
+
+    private static void printInventory(Inventory be){
+        for (int i = 0; i < be.size(); i++) {
+            System.out.println(be.getStack(i));
+        }
     }
 
 }

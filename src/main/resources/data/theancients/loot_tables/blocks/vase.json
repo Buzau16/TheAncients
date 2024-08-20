@@ -2,6 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -13,41 +14,39 @@
             },
             {
               "function": "minecraft:copy_nbt",
+              "source": "block_entity",
               "ops": [
                 {
-                  "op": "replace",
                   "source": "Lock",
-                  "target": "BlockEntityTag.Lock"
+                  "target": "BlockEntityTag.Lock",
+                  "op": "replace"
                 },
                 {
-                  "op": "replace",
                   "source": "LootTable",
-                  "target": "BlockEntityTag.LootTable"
+                  "target": "BlockEntityTag.LootTable",
+                  "op": "replace"
                 },
                 {
-                  "op": "replace",
                   "source": "LootTableSeed",
-                  "target": "BlockEntityTag.LootTableSeed"
+                  "target": "BlockEntityTag.LootTableSeed",
+                  "op": "replace"
                 }
-              ],
-              "source": "block_entity"
+              ]
             },
             {
-              "type": "theancients:vase",
+              "function": "minecraft:set_contents",
+              "type": "minecraft:shulker_box",
               "entries": [
                 {
                   "type": "minecraft:dynamic",
                   "name": "minecraft:contents"
                 }
-              ],
-              "function": "minecraft:set_contents"
+              ]
             }
           ],
           "name": "theancients:vase"
         }
-      ],
-      "rolls": 1.0
+      ]
     }
-  ],
-  "random_sequence": "theanciensts:blocks/vase"
+  ]
 }
