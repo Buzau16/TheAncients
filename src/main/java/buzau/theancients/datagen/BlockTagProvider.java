@@ -1,7 +1,7 @@
 package buzau.theancients.datagen;
 
-import buzau.theancients.block.AncientsBlocks;
-import buzau.theancients.util.AncientsBlockTags;
+import buzau.theancients.registry.AncientsBlocks;
+import buzau.theancients.registry.AncientsBlockTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -95,6 +95,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(AncientsBlocks.ETHEREAL_ARCANE_ORE)
                 .add(AncientsBlocks.ANCIENT_COBBLE)
                 .add(AncientsBlocks.VASE)
+                .add(AncientsBlocks.STRUCT_VASE)
                 .add(AncientsBlocks.VOIDSTONE_ORE);
 
         // What blocks require a shovel to be able to be mined

@@ -1,7 +1,7 @@
 package buzau.theancients.world;
 
 import buzau.theancients.TheAncients;
-import buzau.theancients.block.AncientsBlocks;
+import buzau.theancients.registry.AncientsBlocks;
 import buzau.theancients.util.OrePlacement;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;

@@ -1,12 +1,11 @@
-package buzau.theancients.block;
+package buzau.theancients.registry;
 
 import buzau.theancients.TheAncients;
-import buzau.theancients.world.tree.AncientsSaplings;
-import net.fabricmc.fabric.api.block.v1.FabricBlock;
+import buzau.theancients.block.StructVaseBlock;
+import buzau.theancients.block.VaseBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -93,6 +92,9 @@ public class AncientsBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_SLAB).strength(4.f)));
     public static final Block VASE = registerBlock("vase",
             new VaseBlock(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque()));
+
+    public static final Block STRUCT_VASE = registerBlock("struct_vase",
+            new StructVaseBlock(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque()));
 
     // TODO: add signs
     public static Block PRIMORDIAL_SAPLING = registerBlock("primordial_sapling",

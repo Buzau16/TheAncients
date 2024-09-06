@@ -1,7 +1,6 @@
-package buzau.theancients.items.custom;
+package buzau.theancients.registry;
 
 import buzau.theancients.TheAncients;
-import buzau.theancients.block.AncientsBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -69,6 +68,7 @@ public class TheAncientsItemGroup {
                         entries.add(AncientsBlocks.PRIMORDIAL_FENCE);
                         entries.add(AncientsBlocks.PRIMORDIAL_FENCE_GATE);
                         entries.add(AncientsBlocks.VASE);
+                        entries.add(AncientsBlocks.STRUCT_VASE);
 
                         entries.add(AncientsItems.ETHEREAL_ARCANE_HELMET);
                         entries.add(AncientsItems.ETHEREAL_ARCANE_CHESTPLATE);

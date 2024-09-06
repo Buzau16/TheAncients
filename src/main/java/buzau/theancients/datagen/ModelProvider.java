@@ -1,7 +1,7 @@
 package buzau.theancients.datagen;
 
-import buzau.theancients.block.AncientsBlocks;
-import buzau.theancients.items.custom.AncientsItems;
+import buzau.theancients.registry.AncientsBlocks;
+import buzau.theancients.registry.AncientsItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -56,6 +56,7 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCross(AncientsBlocks.PRIMORDIAL_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerSimpleState(AncientsBlocks.VASE);
+        blockStateModelGenerator.registerSimpleState(AncientsBlocks.STRUCT_VASE);
 
     }
 

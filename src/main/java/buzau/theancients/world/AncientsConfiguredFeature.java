@@ -1,8 +1,8 @@
 package buzau.theancients.world;
 
 import buzau.theancients.TheAncients;
-import buzau.theancients.block.AncientsBlocks;
-import buzau.theancients.util.AncientsBlockTags;
+import buzau.theancients.registry.AncientsBlocks;
+import buzau.theancients.registry.AncientsBlockTags;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;

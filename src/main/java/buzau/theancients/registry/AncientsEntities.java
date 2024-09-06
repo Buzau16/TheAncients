@@ -1,7 +1,6 @@
-package buzau.theancients.block.entity;
+package buzau.theancients.registry;
 
 import buzau.theancients.TheAncients;
-import buzau.theancients.block.AncientsBlocks;
 import buzau.theancients.block.entity.VaseBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;

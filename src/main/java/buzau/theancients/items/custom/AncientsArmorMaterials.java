@@ -1,6 +1,7 @@
 package buzau.theancients.items.custom;
 
 import buzau.theancients.TheAncients;
+import buzau.theancients.registry.AncientsItems;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;

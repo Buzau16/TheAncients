@@ -1,6 +1,5 @@
-package buzau.theancients.world.tree;
+package buzau.theancients.registry;
 
-import buzau.theancients.util.AncientsBlockTags;
 import buzau.theancients.world.AncientsConfiguredFeature;
 import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;

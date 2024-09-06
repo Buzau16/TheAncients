@@ -1,6 +1,8 @@
-package buzau.theancients.items.custom;
+package buzau.theancients.registry;
 
 import buzau.theancients.TheAncients;
+import buzau.theancients.items.custom.AncientsArmorMaterials;
+import buzau.theancients.items.custom.AncientsToolMaterials;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;

@@ -1,0 +1,60 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "theancients:block/struct_vase",
+		"particle": "theancients:block/struct_vase"
+	},
+	"elements": [
+		{
+			"name": "body",
+			"from": [3, 0, 3],
+			"to": [13, 12, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 2.5, 3], "texture": "#0"},
+				"east": {"uv": [2.5, 0, 5, 3], "texture": "#0"},
+				"south": {"uv": [0, 3, 2.5, 6], "texture": "#0"},
+				"west": {"uv": [2.5, 3, 5, 6], "texture": "#0"},
+				"up": {"uv": [7.5, 2.5, 5, 0], "texture": "#0"},
+				"down": {"uv": [7.5, 2.5, 5, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "mouth",
+			"from": [4, 19, 4],
+			"to": [12, 21, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 19, 7]},
+			"faces": {
+				"north": {"uv": [7, 5, 9, 5.5], "texture": "#0"},
+				"east": {"uv": [7, 5.5, 9, 6], "texture": "#0"},
+				"south": {"uv": [6, 7, 8, 7.5], "texture": "#0"},
+				"west": {"uv": [7, 6, 9, 6.5], "texture": "#0"},
+				"up": {"uv": [7, 7, 5, 5], "texture": "#0"},
+				"down": {"uv": [2, 6, 0, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "neck",
+			"from": [6, 12, 6],
+			"to": [10, 19, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 12, 7]},
+			"faces": {
+				"north": {"uv": [2, 6, 3, 7.75], "texture": "#0"},
+				"east": {"uv": [3, 6, 4, 7.75], "texture": "#0"},
+				"south": {"uv": [4, 6, 5, 7.75], "texture": "#0"},
+				"west": {"uv": [5, 7, 6, 8.75], "texture": "#0"},
+				"up": {"uv": [8.5, 1, 7.5, 0], "texture": "#0"},
+				"down": {"uv": [8.5, 1, 7.5, 2], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "struct_vase",
+			"origin": [7, 12, 7],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

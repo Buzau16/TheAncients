@@ -1,12 +1,13 @@
 package buzau.theancients.items.custom;
 
+import buzau.theancients.registry.AncientsItems;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
-import static buzau.theancients.items.custom.AncientsItems.ETHEREAL_ARCANE_INGOT;
+import static buzau.theancients.registry.AncientsItems.ETHEREAL_ARCANE_INGOT;
 
 public enum AncientsToolMaterials implements ToolMaterial {
 

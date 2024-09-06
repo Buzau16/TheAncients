@@ -1,7 +1,7 @@
 package buzau.theancients.datagen;
 
-import buzau.theancients.block.AncientsBlocks;
-import buzau.theancients.items.custom.AncientsItems;
+import buzau.theancients.registry.AncientsBlocks;
+import buzau.theancients.registry.AncientsItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;

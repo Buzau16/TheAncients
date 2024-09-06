@@ -1,4 +1,4 @@
-package buzau.theancients.util;
+package buzau.theancients.registry;
 
 import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryKeys;
